@@ -1,8 +1,9 @@
 'use strict';
 
-const minimist = require('minimist')
-const makeDir = require('make-dir');
-const path = __dirname;
+const minimist 	= require('minimist')
+const makeDir 	= require('make-dir');
+const path 	    = __dirname;
+const { exec } = require('child_process');
 
 var args = minimist(process.argv.slice(2), {  
     default: {
@@ -29,3 +30,12 @@ Promise.all([
 ]).then(paths => {
     console.log('\x1b[42m%s\x1b[0m', 'All folders created successful! Good work ;)');
 });
+
+exec('cd src && tree', (error, stdout, stderr) => {
+    if (error) {
+      console.error(`exec error: ${error}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+    console.log(`stderr: ${stderr}`);
+  });
