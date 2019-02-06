@@ -1,6 +1,6 @@
 {
   "name": "kickstarter-angular",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Package responsible for creating structure for large projects in Angular",
   "main": "index.js",
   "scripts": {
