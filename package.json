@@ -4,7 +4,7 @@
   "description": "Package responsible for creating structure for large projects in Angular",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "createFolders": "node index.js"
   },
   "repository": {
     "type": "git",
