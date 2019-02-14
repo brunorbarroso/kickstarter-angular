@@ -1,3 +1,7 @@
+
+
+[![Build Status](https://img.shields.io/npm/dm/kickstarter-angular.svg)](https://www.npmjs.com/package/kickstarter-angular)
+[![Build Status](https://img.shields.io/npm/v/kickstarter-angular.svg)](https://www.npmjs.com/package/kickstarter-angular)
 # kickstarter-angular
 Package created to generate the necessary folders to better organize an Angular project for equal or later versions to 2.
 
